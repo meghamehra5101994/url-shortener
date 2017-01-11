@@ -5,8 +5,8 @@ var mongoose =require('mongoose');
 var path = require('path');
 
 //Mongoose Connect
-// mongoose.connect(process.env.DBPATH || 'mongodb://localhost:27017/test');
-// var db = mongoose.connection ;
+mongoose.connect(process.env.DBPATH || 'mongodb://localhost:27017/test');
+var db = mongoose.connection ;
 
 app.use(express.static(__dirname+ '/client'));
 app.use(bodyParser.json());
