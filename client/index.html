@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="urlShortener">
 
    <head>
       <meta charset="utf-8">
@@ -9,13 +9,19 @@
    <body>	
    
       <header role="banner">
-         <h1>Url shortener coming soon</h1>
+         <h1>Url shortener </h1>
+         <div ng-controller="mainController">
+        
+         <input type="text">
+         </div>
          
       </header>
       
       <footer>
          
       </footer>
-      
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/services/urlFactory.js"></script>
    </body>   
 </html>
