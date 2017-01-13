@@ -9,7 +9,7 @@ app.factory('Url', function($http, $q) {
 			url : url
 		}).success(function(data) {
             deferred.resolve({
-                url: data});
+                url: data.shortUrl});
 			console.log(data);
 		}).error(function(data){
             deferred.reject(data);
