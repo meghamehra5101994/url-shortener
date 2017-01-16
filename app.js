@@ -9,7 +9,7 @@ var config = require('./config');
 
 //Mongoose Connect
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.DBPATH || 'mongodb://localhost:27017/test');
+mongoose.connect(config.dbpath);
 var db = mongoose.connection ;
 
 app.use(express.static(__dirname+ '/client'));
