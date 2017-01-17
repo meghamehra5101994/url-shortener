@@ -1,7 +1,8 @@
 # url-shortener
 URL shortener is small technique to short your links. Build in Node.js . Inspired by Google URL Shortener.
+http://minurlz.herokuapp.com/
 
-## How to runnn
+## How to run
 ###prerequisite
 Mongodb,Node.JS
 
