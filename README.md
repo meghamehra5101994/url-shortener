@@ -10,3 +10,8 @@ Download or clone the the repo
 ```
 git clone https://github.com/o2nitin/url-shortener.git
 ```
+Run app.js file
+```
+node app.js
+```
+hit the url from local host
