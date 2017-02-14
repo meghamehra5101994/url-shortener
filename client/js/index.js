@@ -1,4 +1,4 @@
-var app = angular.module("urlShortener" ,[]);
+var app = angular.module("urlShortener" ,['ngclipboard']);
 
 var myController = function($scope,$http,Url){
     var self = this;

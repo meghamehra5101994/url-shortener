@@ -13,18 +13,6 @@
 	
    <body>	
    
-      <!--<header role="banner">
-         <h1>Url shortener </h1>
-         <div ng-controller="mainController">
-        
-         <input type="text" ng-model="url"> <button ng-click="genrateUrl()">Genrate Url</button>
-         <div ng-if="miniUrl">
-             <input type="text" ng-model="miniUrl"
-         </div>
-         </div>
-         
-      </header>-->
-
 
  <div class="container">
         <div class="boxing" ng-controller="mainController">
@@ -37,9 +25,9 @@
       
     	<div class="col-md-4 col-md-offset-4 short-url" ng-show="miniUrl">
             <div class="col-md-4 col-md-offset-4"><i class="fa fa-angle-double-down arrow" style=""></i></div>
-            <input type="text" name="p" placeholder="Mini Url" ng-model="miniUrl" />
+            <input type="text" id="surl" name="p" placeholder="Mini Url" ng-model="miniUrl" />
             <div class="copy-text">
-      Copy Your Short URL 
+      <button class="btn btn-default" ngclipboard data-clipboard-target="#surl">Copy</button>
       </div>
         </div>
       </div>
@@ -52,6 +40,8 @@
       </footer>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+     <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+     <script src="js/services/ngclipboard.js"></script>
     <script src="js/index.js"></script>
     <script src="js/services/urlFactory.js"></script>
    </body>   
